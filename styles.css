@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Product+Sans:wght@300&display=swap');
+
+.hidden{
+    display: none;
+}
+
+
+
+.note {
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    float: left; /* Float notes to the left */
+    width: 350px; /* Set a fixed width for each note */
+    white-space: nowrap; /* Prevent line breaks within the notes */
+    overflow: hidden; /* Hide overflowing content */
+    text-overflow: ellipsis; /* Display ellipsis (...) for overflowing text */
+}
+
+.note:hover {
+    transform: scale(1.02);
+    border: 2px solid #4285f4; /* Added border style on hover */
+}
+
+operation {
+    float: right;
+    margin-top: -10px;
+}
+
+.edit,
+.delete {
+    background-color: #4285f4;
+    border: none;
+    color: white;
+    padding: 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.edit:hover,
+.delete:hover {
+    background-color: #1c7cd6;
+}
+
+textarea {
+    width: 100%;
+    height: 80px;
+    padding: 10px;
+    margin-top: 10px;
+    border: none; /* Remove the border */
+    border-radius: 5px;
+    resize: none; /* Disable textarea resizing */
+    font-size: 14px;
+    outline: none; /* Remove the outline */
+}
+
+textarea:focus {
+    box-shadow: none; /* Remove the box shadow on focus */
+}
+
+
+
+/* Custom Styling */
+.btn-success {
+    background-color: #28a745;
+    border-color: #28a745;
+}
+
+.btn-success:hover {
+    background-color: #218838;
+    border-color: #218838;
+}
+
+/* Custom Circle Icon Styling */
+.circle {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: white;
+    border: 2px solid #28a745;
+    position: relative;
+}
+
+/* Custom Arrow Icon Styling */
+.icon.arrow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: solid #28a745;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 3px;
+    transition: transform 0.4s ease;
+}
+
+/* Rotate the arrow on hover */
+.btn-success:hover .icon.arrow {
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+h1 {
+    font-size: 2em;
+    color: #4285f4; /* Google logo blue color */
+}
+
+h1 span {
+    display: inline-block;
+    background-image: linear-gradient(to right, #4285f4, #34a853, #fbbc05, #ea4335);
+    -webkit-background-clip: text;
+    color: transparent;
+    transition: color 0.3s ease;
+}
+
+h1 span:hover {
+    color: #333; /* Adjust the color on hover */
+}
+
+
+i.fas.fa-sticky-note {
+    margin-right: 5px;
+    color: #fbbc05; /* Google Keep yellow color */
+    font-size: 1.2em; /* Adjust the font size as needed */
+}
+
+
+
+
+
+
